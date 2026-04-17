@@ -16,7 +16,7 @@ public class KFBCreativeModeTab {
     public static final RegistryObject<CreativeModeTab> KALEIDOSCOPE_FRUIT_BREW_TAB = CREATIVE_MODE_TAB.register(
             "kaleidoscope_fruit_brew_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> KFBItem.BAYBERRY_BUCKET.get().getDefaultInstance())
+                    .icon(() -> KFBItem.BAYBERRY_WINE.get().getDefaultInstance())
                     .title(Component.translatable(TAB_TRANSLATABLE))
                     .displayItems((parameters, output) -> {
                         KFBItem.ITEM.getEntries()

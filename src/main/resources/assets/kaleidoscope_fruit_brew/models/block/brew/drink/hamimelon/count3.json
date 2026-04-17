@@ -6,8 +6,8 @@
     32
   ],
   "textures": {
-    "0": "kaleidoscope_fruit_brew:block/brew/hamimelon",
-    "particle": "kaleidoscope_fruit_brew:item/brew/hamimelon"
+    "0": "kaleidoscope_fruit_brew:block/brew/hamimelon_wine",
+    "particle": "kaleidoscope_fruit_brew:item/brew/hamimelon_wine"
   },
   "elements": [
     {

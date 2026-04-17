@@ -6,8 +6,8 @@
     32
   ],
   "textures": {
-    "0": "kaleidoscope_fruit_brew:block/brew/peach",
-    "particle": "kaleidoscope_fruit_brew:item/brew/peach"
+    "0": "kaleidoscope_fruit_brew:block/brew/peach_wine",
+    "particle": "kaleidoscope_fruit_brew:item/brew/peach_wine"
   },
   "elements": [
     {

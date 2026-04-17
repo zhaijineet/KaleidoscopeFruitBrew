@@ -6,8 +6,8 @@
     64
   ],
   "textures": {
-    "0": "kaleidoscope_fruit_brew:block/brew/bayberry",
-    "particle": "kaleidoscope_fruit_brew:item/brew/bayberry"
+    "0": "kaleidoscope_fruit_brew:block/brew/bayberry_wine",
+    "particle": "kaleidoscope_fruit_brew:item/brew/bayberry_wine"
   },
   "elements": [
     {

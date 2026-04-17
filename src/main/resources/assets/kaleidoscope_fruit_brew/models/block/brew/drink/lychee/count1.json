@@ -6,8 +6,8 @@
     32
   ],
   "textures": {
-    "0": "kaleidoscope_fruit_brew:block/brew/lychee",
-    "particle": "kaleidoscope_fruit_brew:item/brew/lychee"
+    "0": "kaleidoscope_fruit_brew:block/brew/lychee_wine",
+    "particle": "kaleidoscope_fruit_brew:item/brew/lychee_wine"
   },
   "elements": [
     {

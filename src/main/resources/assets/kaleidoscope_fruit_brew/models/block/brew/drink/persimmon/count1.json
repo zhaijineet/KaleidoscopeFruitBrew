@@ -6,8 +6,8 @@
     32
   ],
   "textures": {
-    "0": "kaleidoscope_fruit_brew:block/brew/persimmon",
-    "particle": "kaleidoscope_fruit_brew:item/brew/persimmon"
+    "0": "kaleidoscope_fruit_brew:block/brew/persimmon_wine",
+    "particle": "kaleidoscope_fruit_brew:item/brew/persimmon_wine"
   },
   "elements": [
     {

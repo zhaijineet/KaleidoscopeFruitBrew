@@ -6,8 +6,8 @@
     32
   ],
   "textures": {
-    "0": "kaleidoscope_fruit_brew:block/brew/pineapple",
-    "particle": "kaleidoscope_fruit_brew:item/brew/pineapple"
+    "0": "kaleidoscope_fruit_brew:block/brew/pineapple_wine",
+    "particle": "kaleidoscope_fruit_brew:item/brew/pineapple_wine"
   },
   "elements": [
     {
