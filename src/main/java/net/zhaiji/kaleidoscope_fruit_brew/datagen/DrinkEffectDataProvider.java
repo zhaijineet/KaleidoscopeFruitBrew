@@ -114,6 +114,10 @@ public class DrinkEffectDataProvider implements DataProvider {
         return effect;
     }
 
+    private static MobEffect getFruitsDelightEffect(String path) {
+        return getEffect("fruitsdelight", path);
+    }
+
     /**
      * 单效果，duration 从 baseDuration 开始每级 ×2
      */
@@ -177,23 +181,23 @@ public class DrinkEffectDataProvider implements DataProvider {
 
     private void addEntry() {
         // 杨梅酒 - fruitsdelight:leaf_piercing, base=20
-        addSingle(KFBItem.BAYBERRY_WINE, getEffect("fruitsdelight", "leaf_piercing"), 20, 0);
+        addSingle(KFBItem.BAYBERRY_WINE, getFruitsDelightEffect("leaf_piercing"), 20, 0);
 
         // 蓝莓酒 - fruitsdelight:brightening + night_vision, base=20
-        addDual(KFBItem.BLUEBERRY_WINE, getEffect("fruitsdelight", "brightening"), MobEffects.NIGHT_VISION, 20);
+        addDual(KFBItem.BLUEBERRY_WINE, getFruitsDelightEffect("brightening"), MobEffects.NIGHT_VISION, 20);
 
         // 蔓越莓酒 - fruitsdelight:shrinking, base=80, cap
-        addSingle(KFBItem.CRANBERRY_WINE, getEffect("fruitsdelight", "shrinking"), 80, 0, true);
+        addSingle(KFBItem.CRANBERRY_WINE, getFruitsDelightEffect("shrinking"), 80, 0, true);
 
         // 榴莲酒 - alienating(40) + suspicious_smell(80), cap
         addDual(KFBItem.DURIAN_WINE,
-            getEffect("fruitsdelight", "alienating"), 40,
-            getEffect("fruitsdelight", "suspicious_smell"), 80,
+            getFruitsDelightEffect("alienating"), 40,
+            getFruitsDelightEffect("suspicious_smell"), 80,
             true
         );
 
         // 无花果酒 - fruitsdelight:digesting, base=80, cap
-        addSingle(KFBItem.FIG_WINE, getEffect("fruitsdelight", "digesting"), 80, 0, true);
+        addSingle(KFBItem.FIG_WINE, getFruitsDelightEffect("digesting"), 80, 0, true);
 
         // 发光莓酒 - minecraft:glowing, base=80, cap
         addSingle(KFBItem.GLOWBERRY_WINE, MobEffects.GLOWING, 80, 0, true);
@@ -202,13 +206,13 @@ public class DrinkEffectDataProvider implements DataProvider {
         addSingle(KFBItem.HAMIMELON_WINE, MobEffects.HEALTH_BOOST, 20, 0);
 
         // 山楂酒 - fruitsdelight:appetizing, base=20
-        addSingle(KFBItem.HAWBERRY_WINE, getEffect("fruitsdelight", "appetizing"), 20, 0);
+        addSingle(KFBItem.HAWBERRY_WINE, getFruitsDelightEffect("appetizing"), 20, 0);
 
         // 猕猴桃酒 - fruitsdelight:cycling, base=4
-        addSingle(KFBItem.KIWI_WINE, getEffect("fruitsdelight", "cycling"), 4, 0);
+        addSingle(KFBItem.KIWI_WINE, getFruitsDelightEffect("cycling"), 4, 0);
 
         // 柠檬酒 - minecraft:haste + fruitsdelight:refreshing, base=20
-        addDual(KFBItem.LEMON_WINE, MobEffects.DIG_SPEED, getEffect("fruitsdelight", "refreshing"), 20);
+        addDual(KFBItem.LEMON_WINE, MobEffects.DIG_SPEED, getFruitsDelightEffect("refreshing"), 20);
 
         // 荔枝酒 - minecraft:strength(amp=2), base=10
         addSingle(KFBItem.LYCHEE_WINE, MobEffects.DAMAGE_BOOST, 10, 2);
@@ -218,43 +222,43 @@ public class DrinkEffectDataProvider implements DataProvider {
             KFBItem.MANGO_WINE,
             List.of(
                 new DrinkEffectData.Entry(MobEffects.DAMAGE_BOOST, 20, 2, 1f),
-                new DrinkEffectData.Entry(getEffect("fruitsdelight", "rage_aura"), 20, 0, 1f)
+                new DrinkEffectData.Entry(getFruitsDelightEffect("rage_aura"), 20, 0, 1f)
             ),
             List.of(
                 new DrinkEffectData.Entry(MobEffects.DAMAGE_BOOST, 40, 2, 1f),
-                new DrinkEffectData.Entry(getEffect("fruitsdelight", "rage_aura"), 40, 0, 1f)
+                new DrinkEffectData.Entry(getFruitsDelightEffect("rage_aura"), 40, 0, 1f)
             ),
             List.of(
                 new DrinkEffectData.Entry(MobEffects.DAMAGE_BOOST, 80, 2, 1f),
-                new DrinkEffectData.Entry(getEffect("fruitsdelight", "rage_aura"), 80, 0, 1f)
+                new DrinkEffectData.Entry(getFruitsDelightEffect("rage_aura"), 80, 0, 1f)
             ),
             List.of(
                 new DrinkEffectData.Entry(MobEffects.DAMAGE_BOOST, 160, 2, 1f),
-                new DrinkEffectData.Entry(getEffect("fruitsdelight", "rage_aura"), 160, 0, 1f)
+                new DrinkEffectData.Entry(getFruitsDelightEffect("rage_aura"), 160, 0, 1f)
             ),
             List.of(
                 new DrinkEffectData.Entry(MobEffects.DAMAGE_BOOST, 320, 2, 1f),
-                new DrinkEffectData.Entry(getEffect("fruitsdelight", "rage_aura"), 320, 0, 1f)
+                new DrinkEffectData.Entry(getFruitsDelightEffect("rage_aura"), 320, 0, 1f)
             )
         );
 
         // 山竹酒 - fruitsdelight:sliding, base=80, cap
-        addSingle(KFBItem.MANGOSTEEN_WINE, getEffect("fruitsdelight", "sliding"), 80, 0, true);
+        addSingle(KFBItem.MANGOSTEEN_WINE, getFruitsDelightEffect("sliding"), 80, 0, true);
 
         // 橙子酒 - minecraft:regeneration + fruitsdelight:recovering, base=20
-        addDual(KFBItem.ORANGE_WINE, MobEffects.REGENERATION, getEffect("fruitsdelight", "recovering"), 20);
+        addDual(KFBItem.ORANGE_WINE, MobEffects.REGENERATION, getFruitsDelightEffect("recovering"), 20);
 
         // 桃子酒 - fruitsdelight:heal_aura, base=10
-        addSingle(KFBItem.PEACH_WINE, getEffect("fruitsdelight", "heal_aura"), 10, 0);
+        addSingle(KFBItem.PEACH_WINE, getFruitsDelightEffect("heal_aura"), 10, 0);
 
         // 梨子酒 - fruitsdelight:lozenge, base=20
-        addSingle(KFBItem.PEAR_WINE, getEffect("fruitsdelight", "lozenge"), 20, 0);
+        addSingle(KFBItem.PEAR_WINE, getFruitsDelightEffect("lozenge"), 20, 0);
 
         // 柿子酒 - fruitsdelight:astringent, base=80, cap
-        addSingle(KFBItem.PERSIMMON_WINE, getEffect("fruitsdelight", "astringent"), 80, 0, true);
+        addSingle(KFBItem.PERSIMMON_WINE, getFruitsDelightEffect("astringent"), 80, 0, true);
 
         // 菠萝酒 - minecraft:speed + fruitsdelight:sweetening, base=20
-        addDual(KFBItem.PINEAPPLE_WINE, MobEffects.MOVEMENT_SPEED, getEffect("fruitsdelight", "sweetening"), 20);
+        addDual(KFBItem.PINEAPPLE_WINE, MobEffects.MOVEMENT_SPEED, getFruitsDelightEffect("sweetening"), 20);
 
         // 龙舌兰 - minecraft:regeneration, base=20
         addSingle(KFBItem.TEQUILA, MobEffects.REGENERATION, 20, 0);
