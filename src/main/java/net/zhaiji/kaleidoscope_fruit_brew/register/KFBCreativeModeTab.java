@@ -1,2 +1,4 @@
-package net.zhaiji.kaleidoscope_fruit_brew.register;public class KFBCreativeModeTab {
+package net.zhaiji.kaleidoscope_fruit_brew.register;
+
+public class KFBCreativeModeTab {
 }
