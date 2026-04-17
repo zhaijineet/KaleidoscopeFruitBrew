@@ -142,7 +142,21 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
-
+    maven {
+        // location of the maven that hosts JEI files before January 2023
+        name = "Progwml6's maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
     maven {
         name = "Curse Maven"
         url "https://cursemaven.com"
@@ -162,9 +176,9 @@ dependencies {
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
-    // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
-    // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:15.20.0.112")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:15.20.0.112")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:15.20.0.112")
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
@@ -181,6 +195,10 @@ dependencies {
     implementation fg.deobf("curse.maven:kaleidoscope-tavern-1475175:7785541")
     // 果园乐事
     implementation fg.deobf("curse.maven:fruits-delight-943774:6951298")
+    // 料理乐事，果园乐事有使用，不加依赖不能启动runData
+    implementation fg.deobf("curse.maven:cuisine-delight-893541:7732672")
+    // 农夫乐事
+    implementation fg.deobf("curse.maven:farmers-delight-398521:7801523")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
