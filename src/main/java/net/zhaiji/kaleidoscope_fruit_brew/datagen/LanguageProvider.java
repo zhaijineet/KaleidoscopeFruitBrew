@@ -107,7 +107,7 @@ public class LanguageProvider extends net.minecraftforge.common.data.LanguagePro
         add(KFBFluid.PEAR_JUICE.get(), "梨子汁");
         add(KFBFluid.PERSIMMON_JUICE.get(), "柿子汁");
         add(KFBFluid.PINEAPPLE_JUICE.get(), "菠萝汁");
-
+        add(KFBFluid.APPLE_JUICE.get(), "苹果汁");
         // 果汁桶
         add(KFBItem.BAYBERRY_BUCKET.get(), "杨梅果汁桶");
         add(KFBItem.BLUEBERRY_BUCKET.get(), "蓝莓果汁桶");
