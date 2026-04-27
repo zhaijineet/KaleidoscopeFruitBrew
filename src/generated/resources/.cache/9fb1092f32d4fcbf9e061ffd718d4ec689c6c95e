@@ -1,4 +1,5 @@
-// 1.20.1	2026-04-18T00:49:23.6175405	Recipes
+// 1.20.1	2026-04-27T18:57:37.1597157	Recipes
+720d19aa74d28cdb7ad3c2ed0a57ad7065b15648 data/kaleidoscope_tavern/recipes/barrel/apple_cider.json
 490bce678d8bdb851ec20288a20e9f20b9b2caa9 data/kaleidoscope_tavern/recipes/barrel/bayberry_wine.json
 1cc06459e74ea38c04093eee394a7e1b89458f8a data/kaleidoscope_tavern/recipes/barrel/blueberry_wine.json
 1faec2cf995a933de3d17ee5d7cb090dfe3b473c data/kaleidoscope_tavern/recipes/barrel/cranberry_wine.json
@@ -18,6 +19,7 @@ ff54eb9f341d141d1d31f86d36337be64f18f88b data/kaleidoscope_tavern/recipes/barrel
 328135cca7305bcb120d64aa4fddb837fffb3b8c data/kaleidoscope_tavern/recipes/barrel/persimmon_wine.json
 969bb3f0462681c043a46df2d61d6a1b8fcd1b3e data/kaleidoscope_tavern/recipes/barrel/pineapple_wine.json
 e7453f14103e2346c62d3fc443ddbd510cd2fea2 data/kaleidoscope_tavern/recipes/barrel/tequila.json
+c56ce3f25f19092075a5875cb486286da4d5bce3 data/kaleidoscope_tavern/recipes/pressing_tub/apple_bucket.json
 007926410560c00da49464ecf67adb910e0abbd2 data/kaleidoscope_tavern/recipes/pressing_tub/bayberry_bucket.json
 2db0d12734a08b9604d972bfa7f74c266eb2bf76 data/kaleidoscope_tavern/recipes/pressing_tub/blueberry_bucket.json
 f70c36d060230bcdf0a5a78ef6e5960f211c9b92 data/kaleidoscope_tavern/recipes/pressing_tub/cactus_bucket.json

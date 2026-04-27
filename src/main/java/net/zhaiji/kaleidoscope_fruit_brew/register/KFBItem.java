@@ -85,6 +85,10 @@ public class KFBItem {
         "pineapple_bucket",
         () -> new JuiceBucketItem(KFBFluid.PINEAPPLE_JUICE)
     );
+    public static final RegistryObject<Item> APPLE_BUCKET = ITEM.register(
+            "apple_bucket",
+            () -> new JuiceBucketItem(KFBFluid.APPLE_JUICE)
+    );
 
     // ==================== 果酒物品（18种） ====================
     public static final RegistryObject<Item> BAYBERRY_WINE = ITEM.register(
@@ -162,5 +166,9 @@ public class KFBItem {
     public static final RegistryObject<Item> TEQUILA = ITEM.register(
         "tequila",
         () -> new DrinkBlockItem(KFBBlock.TEQUILA.get())
+    );
+    public static final RegistryObject<Item> APPLE_CIDER = ITEM.register(
+            "apple_cider",
+            () -> new DrinkBlockItem(KFBBlock.APPLE_CIDER.get())
     );
 }

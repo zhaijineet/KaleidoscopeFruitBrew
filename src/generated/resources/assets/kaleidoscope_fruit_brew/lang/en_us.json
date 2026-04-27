@@ -1,4 +1,6 @@
 {
+  "block.kaleidoscope_fruit_brew.apple_cider": "Apple Cider",
+  "block.kaleidoscope_fruit_brew.apple_juice": "Apple Juice",
   "block.kaleidoscope_fruit_brew.bayberry_juice": "Bayberry Juice",
   "block.kaleidoscope_fruit_brew.bayberry_wine": "Bayberry Wine",
   "block.kaleidoscope_fruit_brew.blueberry_juice": "Blueberry Juice",
@@ -36,6 +38,7 @@
   "block.kaleidoscope_fruit_brew.pineapple_juice": "Pineapple Juice",
   "block.kaleidoscope_fruit_brew.pineapple_wine": "Pineapple Wine",
   "block.kaleidoscope_fruit_brew.tequila": "Tequila",
+  "item.kaleidoscope_fruit_brew.apple_bucket": "Apple Juice Bucket",
   "item.kaleidoscope_fruit_brew.bayberry_bucket": "Bayberry Juice Bucket",
   "item.kaleidoscope_fruit_brew.blueberry_bucket": "Blueberry Juice Bucket",
   "item.kaleidoscope_fruit_brew.cactus_bucket": "Cactus Juice Bucket",

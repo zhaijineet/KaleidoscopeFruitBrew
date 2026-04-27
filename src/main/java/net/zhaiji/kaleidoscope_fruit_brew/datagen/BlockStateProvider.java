@@ -35,6 +35,7 @@ public class BlockStateProvider extends net.minecraftforge.client.model.generato
         wine(KFBBlock.PERSIMMON_WINE.get(), "persimmon");
         wine(KFBBlock.PINEAPPLE_WINE.get(), "pineapple");
         wine(KFBBlock.TEQUILA.get(), "tequila");
+        wine(KFBBlock.APPLE_CIDER.get(), "apple");
     }
 
     private void wine(Block block, String name) {

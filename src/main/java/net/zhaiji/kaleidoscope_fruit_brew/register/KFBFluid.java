@@ -266,6 +266,19 @@ public class KFBFluid {
         PINEAPPLE_JUICE_TYPE, PINEAPPLE_JUICE, FLOWING_PINEAPPLE_JUICE
     ).bucket(KFBItem.PINEAPPLE_BUCKET);
 
+    // ==================== Apple ====================
+    public static final RegistryObject<FluidType> APPLE_JUICE_TYPE = registerFluidType("apple_juice");
+    public static final RegistryObject<Fluid> APPLE_JUICE = FLUID.register(
+            "apple_juice",
+            () -> new ForgeFlowingFluid.Source(KFBFluid.APPLE_JUICE_PROPERTIES)
+    );
+    public static final RegistryObject<Fluid> FLOWING_APPLE_JUICE = FLUID.register(
+            "flowing_apple_juice",
+            () -> new ForgeFlowingFluid.Flowing(KFBFluid.APPLE_JUICE_PROPERTIES)
+    );
+    public static final ForgeFlowingFluid.Properties APPLE_JUICE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            APPLE_JUICE_TYPE, APPLE_JUICE, FLOWING_APPLE_JUICE
+    ).bucket(KFBItem.APPLE_BUCKET);
     public static RegistryObject<FluidType> registerFluidType(String name) {
         return FLUID_TYPE.register(name, () -> new KFBFluidType(name));
     }

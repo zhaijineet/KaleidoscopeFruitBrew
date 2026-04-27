@@ -262,6 +262,8 @@ public class DrinkEffectDataProvider implements DataProvider {
 
         // 龙舌兰 - minecraft:regeneration, base=20
         addSingle(KFBItem.TEQUILA, MobEffects.REGENERATION, 20, 0);
+
+        addSingle(KFBItem.APPLE_CIDER, MobEffects.ABSORPTION, 20, 1);
     }
 
     @Override

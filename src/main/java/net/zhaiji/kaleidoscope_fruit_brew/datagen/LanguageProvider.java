@@ -41,7 +41,7 @@ public class LanguageProvider extends net.minecraftforge.common.data.LanguagePro
         add(KFBFluid.PEAR_JUICE.get(), "Pear Juice");
         add(KFBFluid.PERSIMMON_JUICE.get(), "Persimmon Juice");
         add(KFBFluid.PINEAPPLE_JUICE.get(), "Pineapple Juice");
-
+        add(KFBFluid.APPLE_JUICE.get(), "Apple Juice");
         // 果汁桶
         add(KFBItem.BAYBERRY_BUCKET.get(), "Bayberry Juice Bucket");
         add(KFBItem.BLUEBERRY_BUCKET.get(), "Blueberry Juice Bucket");
@@ -61,7 +61,7 @@ public class LanguageProvider extends net.minecraftforge.common.data.LanguagePro
         add(KFBItem.PEAR_BUCKET.get(), "Pear Juice Bucket");
         add(KFBItem.PERSIMMON_BUCKET.get(), "Persimmon Juice Bucket");
         add(KFBItem.PINEAPPLE_BUCKET.get(), "Pineapple Juice Bucket");
-
+        add(KFBItem.APPLE_BUCKET.get(), "Apple Juice Bucket");
         // 果酒方块
         add(KFBBlock.BAYBERRY_WINE.get(), "Bayberry Wine");
         add(KFBBlock.BLUEBERRY_WINE.get(), "Blueberry Wine");
@@ -82,6 +82,7 @@ public class LanguageProvider extends net.minecraftforge.common.data.LanguagePro
         add(KFBBlock.PERSIMMON_WINE.get(), "Persimmon Wine");
         add(KFBBlock.PINEAPPLE_WINE.get(), "Pineapple Wine");
         add(KFBBlock.TEQUILA.get(), "Tequila");
+        add(KFBBlock.APPLE_CIDER.get(), "Apple Cider");
     }
 
     public void Chinese_CN() {
@@ -126,7 +127,7 @@ public class LanguageProvider extends net.minecraftforge.common.data.LanguagePro
         add(KFBItem.PEAR_BUCKET.get(), "梨子果汁桶");
         add(KFBItem.PERSIMMON_BUCKET.get(), "柿子果汁桶");
         add(KFBItem.PINEAPPLE_BUCKET.get(), "菠萝果汁桶");
-
+        add(KFBItem.APPLE_BUCKET.get(), "苹果果汁桶");
         // 果酒方块
         add(KFBBlock.BAYBERRY_WINE.get(), "杨梅酒");
         add(KFBBlock.BLUEBERRY_WINE.get(), "蓝莓酒");
@@ -147,6 +148,7 @@ public class LanguageProvider extends net.minecraftforge.common.data.LanguagePro
         add(KFBBlock.PERSIMMON_WINE.get(), "柿子酒");
         add(KFBBlock.PINEAPPLE_WINE.get(), "菠萝酒");
         add(KFBBlock.TEQUILA.get(), "龙舌兰酒");
+        add(KFBBlock.APPLE_CIDER.get(), "苹果酒");
     }
 
     public void add(Fluid key, String name) {

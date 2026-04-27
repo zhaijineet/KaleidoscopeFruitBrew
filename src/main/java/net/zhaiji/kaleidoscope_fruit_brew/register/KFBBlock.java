@@ -25,6 +25,7 @@ public class KFBBlock {
         Block.box(8 - size - 4, 0, 8 - size - 4, 8 + size + 4, height, 8 + size + 4),
         };
     }
+
     public static final RegistryObject<Block> BAYBERRY_WINE = BLOCK.register(
         "bayberry_wine",
         DrinkBlock.create().maxCount(4).shapes(SHAPE_GEN(3,12)).build()
@@ -100,5 +101,9 @@ public class KFBBlock {
     public static final RegistryObject<Block> TEQUILA = BLOCK.register(
         "tequila",
         DrinkBlock.create().maxCount(4).shapes(SHAPE_GEN(3,16)).build()
+    );
+    public static final RegistryObject<Block> APPLE_CIDER = BLOCK.register(
+            "apple_cider",
+            DrinkBlock.create().maxCount(4).shapes(SHAPE_GEN(2,16)).build()
     );
 }

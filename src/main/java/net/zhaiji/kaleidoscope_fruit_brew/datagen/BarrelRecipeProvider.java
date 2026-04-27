@@ -41,6 +41,7 @@ public class BarrelRecipeProvider extends RecipeProvider {
         addPressingTubRecipe(consumer, FruitType.PEAR.getFruit(), KFBFluid.PEAR_JUICE.get());
         addPressingTubRecipe(consumer, FruitType.PERSIMMON.getFruit(), KFBFluid.PERSIMMON_JUICE.get());
         addPressingTubRecipe(consumer, FruitType.PINEAPPLE.getFruit(), KFBFluid.PINEAPPLE_JUICE.get());
+        addPressingTubRecipe(consumer, Items.APPLE, KFBFluid.APPLE_JUICE.get());
 
         // ==================== 酒桶酿造配方（果汁 → 果酒） ====================
         addBarrelRecipe(consumer, KFBFluid.BAYBERRY_JUICE.get(), KFBItem.BAYBERRY_WINE.get());
@@ -62,6 +63,7 @@ public class BarrelRecipeProvider extends RecipeProvider {
         addBarrelRecipe(consumer, KFBFluid.PERSIMMON_JUICE.get(), KFBItem.PERSIMMON_WINE.get());
         addBarrelRecipe(consumer, KFBFluid.PINEAPPLE_JUICE.get(), KFBItem.PINEAPPLE_WINE.get());
         addBarrelRecipe(consumer, KFBFluid.CACTUS_JUICE.get(), KFBItem.TEQUILA.get());
+        addBarrelRecipe(consumer, KFBFluid.APPLE_JUICE.get(), KFBItem.APPLE_CIDER.get());
     }
 
     private void addBarrelRecipe(Consumer<FinishedRecipe> consumer, Fluid fluid, ItemLike result) {

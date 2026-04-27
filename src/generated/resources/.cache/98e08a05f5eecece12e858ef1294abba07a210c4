@@ -1,4 +1,6 @@
-// 1.20.1	2026-04-17T22:38:25.4590129	Item Models: kaleidoscope_fruit_brew
+// 1.20.1	2026-04-27T18:57:37.1692569	Item Models: kaleidoscope_fruit_brew
+85f4d15d134343ad84bc0caf8543b661b218e841 assets/kaleidoscope_fruit_brew/models/item/apple_bucket.json
+93cd76582806091e947f00995791da7cdb3ad593 assets/kaleidoscope_fruit_brew/models/item/apple_cider.json
 f6bb97d9665b24610e287e17c4516b74f8ab46f5 assets/kaleidoscope_fruit_brew/models/item/bayberry_bucket.json
 c4eb6c71d34bb428971b13e863d7c325f36f8583 assets/kaleidoscope_fruit_brew/models/item/bayberry_wine.json
 b2050ed23be64eaadd9a606ee0463425b0753fc9 assets/kaleidoscope_fruit_brew/models/item/blueberry_bucket.json

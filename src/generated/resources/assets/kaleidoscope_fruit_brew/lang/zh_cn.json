@@ -1,4 +1,5 @@
 {
+  "block.kaleidoscope_fruit_brew.apple_cider": "苹果酒",
   "block.kaleidoscope_fruit_brew.bayberry_juice": "杨梅汁",
   "block.kaleidoscope_fruit_brew.bayberry_wine": "杨梅酒",
   "block.kaleidoscope_fruit_brew.blueberry_juice": "蓝莓汁",
@@ -36,6 +37,7 @@
   "block.kaleidoscope_fruit_brew.pineapple_juice": "菠萝汁",
   "block.kaleidoscope_fruit_brew.pineapple_wine": "菠萝酒",
   "block.kaleidoscope_fruit_brew.tequila": "龙舌兰酒",
+  "item.kaleidoscope_fruit_brew.apple_bucket": "苹果果汁桶",
   "item.kaleidoscope_fruit_brew.bayberry_bucket": "杨梅果汁桶",
   "item.kaleidoscope_fruit_brew.blueberry_bucket": "蓝莓果汁桶",
   "item.kaleidoscope_fruit_brew.cactus_bucket": "仙人掌果汁桶",
