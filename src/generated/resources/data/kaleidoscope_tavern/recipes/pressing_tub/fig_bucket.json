@@ -3,6 +3,6 @@
   "fluid": "kaleidoscope_fruit_brew:fig_juice",
   "fluid_amount": 125,
   "ingredient": {
-    "item": "fruitsdelight:fig"
+    "tag": "forge:fruits/fig"
   }
 }

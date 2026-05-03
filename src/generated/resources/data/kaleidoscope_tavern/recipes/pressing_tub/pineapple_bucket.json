@@ -3,6 +3,6 @@
   "fluid": "kaleidoscope_fruit_brew:pineapple_juice",
   "fluid_amount": 125,
   "ingredient": {
-    "item": "fruitsdelight:pineapple_slice"
+    "tag": "forge:fruits/pineapple"
   }
 }

@@ -3,6 +3,6 @@
   "fluid": "kaleidoscope_fruit_brew:blueberry_juice",
   "fluid_amount": 125,
   "ingredient": {
-    "item": "fruitsdelight:blueberry"
+    "tag": "forge:fruits/blueberry"
   }
 }

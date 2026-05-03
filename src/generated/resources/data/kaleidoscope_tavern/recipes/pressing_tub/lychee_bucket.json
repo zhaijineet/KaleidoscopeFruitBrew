@@ -3,6 +3,6 @@
   "fluid": "kaleidoscope_fruit_brew:lychee_juice",
   "fluid_amount": 125,
   "ingredient": {
-    "item": "fruitsdelight:lychee"
+    "tag": "forge:fruits/lychee"
   }
 }
