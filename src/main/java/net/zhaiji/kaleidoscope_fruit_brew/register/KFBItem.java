@@ -12,7 +12,7 @@ import static net.zhaiji.kaleidoscope_fruit_brew.KaleidoscopeFruitBrew.MOD_ID;
 public class KFBItem {
     public static final DeferredRegister<Item> ITEM = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
 
-    // ==================== 果汁桶（18种） ====================
+    // ==================== 果汁桶（19种） ====================
     public static final RegistryObject<Item> BAYBERRY_BUCKET = ITEM.register(
         "bayberry_bucket",
         () -> new JuiceBucketItem(KFBFluid.BAYBERRY_JUICE)
@@ -90,7 +90,7 @@ public class KFBItem {
             () -> new JuiceBucketItem(KFBFluid.APPLE_JUICE)
     );
 
-    // ==================== 果酒物品（18种） ====================
+    // ==================== 果酒物品（20种） ====================
     public static final RegistryObject<Item> BAYBERRY_WINE = ITEM.register(
         "bayberry_wine",
         () -> new DrinkBlockItem(KFBBlock.BAYBERRY_WINE.get())

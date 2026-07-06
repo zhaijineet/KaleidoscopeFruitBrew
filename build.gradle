@@ -192,7 +192,7 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // 森罗物语：酒馆
-    implementation fg.deobf("curse.maven:kaleidoscope-tavern-1475175:7785541")
+    implementation fg.deobf("curse.maven:kaleidoscope-tavern-1475175:8350841")
     // 果园乐事
     implementation fg.deobf("curse.maven:fruits-delight-943774:6951298")
     // 料理乐事，果园乐事有使用，不加依赖不能启动runData

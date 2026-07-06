@@ -1,7 +1,10 @@
 package net.zhaiji.kaleidoscope_fruit_brew.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.material.Fluid;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.zhaiji.kaleidoscope_fruit_brew.KaleidoscopeFruitBrew;
 import net.zhaiji.kaleidoscope_fruit_brew.register.KFBCreativeModeTab;
 import net.zhaiji.kaleidoscope_fruit_brew.register.KFBBlock;
@@ -42,26 +45,26 @@ public class LanguageProvider extends net.minecraftforge.common.data.LanguagePro
         add(KFBFluid.PERSIMMON_JUICE.get(), "Persimmon Juice");
         add(KFBFluid.PINEAPPLE_JUICE.get(), "Pineapple Juice");
         add(KFBFluid.APPLE_JUICE.get(), "Apple Juice");
-        // 果汁桶
-        add(KFBItem.BAYBERRY_BUCKET.get(), "Bayberry Juice Bucket");
-        add(KFBItem.BLUEBERRY_BUCKET.get(), "Blueberry Juice Bucket");
-        add(KFBItem.CACTUS_BUCKET.get(), "Cactus Juice Bucket");
-        add(KFBItem.CRANBERRY_BUCKET.get(), "Cranberry Juice Bucket");
-        add(KFBItem.DURIAN_BUCKET.get(), "Durian Juice Bucket");
-        add(KFBItem.FIG_BUCKET.get(), "Fig Juice Bucket");
-        add(KFBItem.HAMIMELON_BUCKET.get(), "Hamimelon Juice Bucket");
-        add(KFBItem.HAWBERRY_BUCKET.get(), "Hawberry Juice Bucket");
-        add(KFBItem.KIWI_BUCKET.get(), "Kiwi Juice Bucket");
-        add(KFBItem.LEMON_BUCKET.get(), "Lemon Juice Bucket");
-        add(KFBItem.LYCHEE_BUCKET.get(), "Lychee Juice Bucket");
-        add(KFBItem.MANGO_BUCKET.get(), "Mango Juice Bucket");
-        add(KFBItem.MANGOSTEEN_BUCKET.get(), "Mangosteen Juice Bucket");
-        add(KFBItem.ORANGE_BUCKET.get(), "Orange Juice Bucket");
-        add(KFBItem.PEACH_BUCKET.get(), "Peach Juice Bucket");
-        add(KFBItem.PEAR_BUCKET.get(), "Pear Juice Bucket");
-        add(KFBItem.PERSIMMON_BUCKET.get(), "Persimmon Juice Bucket");
-        add(KFBItem.PINEAPPLE_BUCKET.get(), "Pineapple Juice Bucket");
-        add(KFBItem.APPLE_BUCKET.get(), "Apple Juice Bucket");
+        // 果汁桶（物品名 + tooltip：描述最终果酒的调酒颜色）
+        addJuiceBucket(KFBItem.BAYBERRY_BUCKET.get(), "Bayberry Juice Bucket", "Use to brew dark red drinks");
+        addJuiceBucket(KFBItem.BLUEBERRY_BUCKET.get(), "Blueberry Juice Bucket", "Use to brew dark purple drinks");
+        addJuiceBucket(KFBItem.CACTUS_BUCKET.get(), "Cactus Juice Bucket", "Use to brew green drinks");
+        addJuiceBucket(KFBItem.CRANBERRY_BUCKET.get(), "Cranberry Juice Bucket", "Use to brew red drinks");
+        addJuiceBucket(KFBItem.DURIAN_BUCKET.get(), "Durian Juice Bucket", "Use to brew yellow drinks");
+        addJuiceBucket(KFBItem.FIG_BUCKET.get(), "Fig Juice Bucket", "Use to brew golden drinks");
+        addJuiceBucket(KFBItem.HAMIMELON_BUCKET.get(), "Hamimelon Juice Bucket", "Use to brew golden drinks");
+        addJuiceBucket(KFBItem.HAWBERRY_BUCKET.get(), "Hawberry Juice Bucket", "Use to brew dark red drinks");
+        addJuiceBucket(KFBItem.KIWI_BUCKET.get(), "Kiwi Juice Bucket", "Use to brew green drinks");
+        addJuiceBucket(KFBItem.LEMON_BUCKET.get(), "Lemon Juice Bucket", "Use to brew yellow drinks");
+        addJuiceBucket(KFBItem.LYCHEE_BUCKET.get(), "Lychee Juice Bucket", "Use to brew light purple drinks");
+        addJuiceBucket(KFBItem.MANGO_BUCKET.get(), "Mango Juice Bucket", "Use to brew golden drinks");
+        addJuiceBucket(KFBItem.MANGOSTEEN_BUCKET.get(), "Mangosteen Juice Bucket", "Use to brew light purple drinks");
+        addJuiceBucket(KFBItem.ORANGE_BUCKET.get(), "Orange Juice Bucket", "Use to brew golden drinks");
+        addJuiceBucket(KFBItem.PEACH_BUCKET.get(), "Peach Juice Bucket", "Use to brew light purple drinks");
+        addJuiceBucket(KFBItem.PEAR_BUCKET.get(), "Pear Juice Bucket", "Use to brew yellow drinks");
+        addJuiceBucket(KFBItem.PERSIMMON_BUCKET.get(), "Persimmon Juice Bucket", "Use to brew red drinks");
+        addJuiceBucket(KFBItem.PINEAPPLE_BUCKET.get(), "Pineapple Juice Bucket", "Use to brew golden drinks");
+        addJuiceBucket(KFBItem.APPLE_BUCKET.get(), "Apple Juice Bucket", "Use to brew golden drinks");
         // 果酒方块
         add(KFBBlock.BAYBERRY_WINE.get(), "Bayberry Wine");
         add(KFBBlock.BLUEBERRY_WINE.get(), "Blueberry Wine");
@@ -109,25 +112,25 @@ public class LanguageProvider extends net.minecraftforge.common.data.LanguagePro
         add(KFBFluid.PINEAPPLE_JUICE.get(), "菠萝汁");
         add(KFBFluid.APPLE_JUICE.get(), "苹果汁");
         // 果汁桶
-        add(KFBItem.BAYBERRY_BUCKET.get(), "杨梅果汁桶");
-        add(KFBItem.BLUEBERRY_BUCKET.get(), "蓝莓果汁桶");
-        add(KFBItem.CACTUS_BUCKET.get(), "仙人掌果汁桶");
-        add(KFBItem.CRANBERRY_BUCKET.get(), "蔓越莓果汁桶");
-        add(KFBItem.DURIAN_BUCKET.get(), "榴莲果汁桶");
-        add(KFBItem.FIG_BUCKET.get(), "无花果果汁桶");
-        add(KFBItem.HAMIMELON_BUCKET.get(), "哈密瓜果汁桶");
-        add(KFBItem.HAWBERRY_BUCKET.get(), "山楂果汁桶");
-        add(KFBItem.KIWI_BUCKET.get(), "猕猴桃果汁桶");
-        add(KFBItem.LEMON_BUCKET.get(), "柠檬果汁桶");
-        add(KFBItem.LYCHEE_BUCKET.get(), "荔枝果汁桶");
-        add(KFBItem.MANGO_BUCKET.get(), "芒果果汁桶");
-        add(KFBItem.MANGOSTEEN_BUCKET.get(), "山竹果汁桶");
-        add(KFBItem.ORANGE_BUCKET.get(), "橘子果汁桶");
-        add(KFBItem.PEACH_BUCKET.get(), "水蜜桃果汁桶");
-        add(KFBItem.PEAR_BUCKET.get(), "梨子果汁桶");
-        add(KFBItem.PERSIMMON_BUCKET.get(), "柿子果汁桶");
-        add(KFBItem.PINEAPPLE_BUCKET.get(), "菠萝果汁桶");
-        add(KFBItem.APPLE_BUCKET.get(), "苹果果汁桶");
+        addJuiceBucket(KFBItem.BAYBERRY_BUCKET.get(), "杨梅果汁桶", "用于酿造深红色饮品");
+        addJuiceBucket(KFBItem.BLUEBERRY_BUCKET.get(), "蓝莓果汁桶", "用于酿造深紫色饮品");
+        addJuiceBucket(KFBItem.CACTUS_BUCKET.get(), "仙人掌果汁桶", "用于酿造绿色饮品");
+        addJuiceBucket(KFBItem.CRANBERRY_BUCKET.get(), "蔓越莓果汁桶", "用于酿造红色饮品");
+        addJuiceBucket(KFBItem.DURIAN_BUCKET.get(), "榴莲果汁桶", "用于酿造黄色饮品");
+        addJuiceBucket(KFBItem.FIG_BUCKET.get(), "无花果果汁桶", "用于酿造金色饮品");
+        addJuiceBucket(KFBItem.HAMIMELON_BUCKET.get(), "哈密瓜果汁桶", "用于酿造金色饮品");
+        addJuiceBucket(KFBItem.HAWBERRY_BUCKET.get(), "山楂果汁桶", "用于酿造深红色饮品");
+        addJuiceBucket(KFBItem.KIWI_BUCKET.get(), "猕猴桃果汁桶", "用于酿造绿色饮品");
+        addJuiceBucket(KFBItem.LEMON_BUCKET.get(), "柠檬果汁桶", "用于酿造黄色饮品");
+        addJuiceBucket(KFBItem.LYCHEE_BUCKET.get(), "荔枝果汁桶", "用于酿造淡紫色饮品");
+        addJuiceBucket(KFBItem.MANGO_BUCKET.get(), "芒果果汁桶", "用于酿造金色饮品");
+        addJuiceBucket(KFBItem.MANGOSTEEN_BUCKET.get(), "山竹果汁桶", "用于酿造淡紫色饮品");
+        addJuiceBucket(KFBItem.ORANGE_BUCKET.get(), "橘子果汁桶", "用于酿造金色饮品");
+        addJuiceBucket(KFBItem.PEACH_BUCKET.get(), "水蜜桃果汁桶", "用于酿造淡紫色饮品");
+        addJuiceBucket(KFBItem.PEAR_BUCKET.get(), "梨子果汁桶", "用于酿造黄色饮品");
+        addJuiceBucket(KFBItem.PERSIMMON_BUCKET.get(), "柿子果汁桶", "用于酿造红色饮品");
+        addJuiceBucket(KFBItem.PINEAPPLE_BUCKET.get(), "菠萝果汁桶", "用于酿造金色饮品");
+        addJuiceBucket(KFBItem.APPLE_BUCKET.get(), "苹果果汁桶", "用于酿造金色饮品");
         // 果酒方块
         add(KFBBlock.BAYBERRY_WINE.get(), "杨梅酒");
         add(KFBBlock.BLUEBERRY_WINE.get(), "蓝莓酒");
@@ -149,6 +152,15 @@ public class LanguageProvider extends net.minecraftforge.common.data.LanguagePro
         add(KFBBlock.PINEAPPLE_WINE.get(), "菠萝酒");
         add(KFBBlock.TEQUILA.get(), "龙舌兰酒");
         add(KFBBlock.APPLE_CIDER.get(), "苹果酒");
+    }
+
+    public void addJuiceBucket(Item bucket, String name, String tooltip) {
+        add(bucket, name);
+        ResourceLocation key = ForgeRegistries.ITEMS.getKey(bucket);
+        if (key == null) {
+            throw new IllegalStateException("Unregistered juice bucket item: " + bucket);
+        }
+        add("tooltip." + key.getNamespace() + "." + key.getPath(), tooltip);
     }
 
     public void add(Fluid key, String name) {

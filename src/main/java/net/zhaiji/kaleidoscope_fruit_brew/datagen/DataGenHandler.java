@@ -3,6 +3,7 @@ package net.zhaiji.kaleidoscope_fruit_brew.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.tags.TagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 
@@ -22,5 +23,11 @@ public class DataGenHandler {
 
         generator.addProvider(event.includeServer(), new BarrelRecipeProvider(packOutput));
         generator.addProvider(event.includeServer(), new DrinkEffectDataProvider(packOutput));
+        // 本项目无 block tag 需求，传入空 block lookup 占位
+        generator.addProvider(event.includeServer(), new KFBItemTagsProvider(
+                packOutput, lookupProvider,
+                CompletableFuture.completedFuture(TagsProvider.TagLookup.empty()),
+                existingFileHelper
+        ));
     }
 }
